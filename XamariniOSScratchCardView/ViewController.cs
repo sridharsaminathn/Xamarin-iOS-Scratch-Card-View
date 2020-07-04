@@ -13,9 +13,12 @@ namespace XamariniOSScratchCardView
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
+
+            //Set Image for scratch
             scratchArea.Image = UIImage.FromBundle("scratch_img");
             scratchArea.BackgroundColor = UIColor.White.ColorWithAlpha(0.5f);
+
+            //Event handler to get the scratch percentage
             scratchArea.ScratchCompleted += ScratchArea_ScratchCompleted;
         }
 

@@ -25,18 +25,33 @@ namespace XamariniOSScratchCardView
     {
         #region Declarations
 
+        /// <summary>
+        /// start point of the scratch 
+        /// </summary>
         CGPoint startPoint;
 
+        /// <summary>
+        /// end point of the scratch
+        /// </summary>
         CGPoint endPoint;
 
         CGContext context;
 
+        /// <summary>
+        /// The current frame
+        /// </summary>
         CGRect currentFrame;
 
+        /// <summary>
+        /// List of scratched coordinates
+        /// </summary>
         List<ScratchedPoints> co_ordinates = new List<ScratchedPoints>();
 
         bool swiped = false;
 
+        /// <summary>
+        /// To check whether the scrtach is completed 
+        /// </summary>
         bool IsCallbackCompleted = false;
 
         #endregion
@@ -62,7 +77,11 @@ namespace XamariniOSScratchCardView
             }
         }
 
+        /// <summary>
+        /// Event to get the scratch percentage 
+        /// </summary>
         public event Action<int> ScratchCompleted;
+
 
         public int ScrachRevealMinPercent { get; set; }
 
