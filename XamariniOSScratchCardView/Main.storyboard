@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yna-jw-4S3">
+                                <rect key="frame" x="53" y="275.5" width="269" height="261"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Scratched !!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ati-nq-5PU">
+                                        <rect key="frame" x="42.5" y="118" width="184" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ati-nq-5PU" firstAttribute="centerX" secondItem="yna-jw-4S3" secondAttribute="centerX" id="5kC-Wz-Rwo"/>
+                                    <constraint firstItem="Ati-nq-5PU" firstAttribute="centerY" secondItem="yna-jw-4S3" secondAttribute="centerY" id="k5H-j1-bZB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="790" customClass="ScratchCardView">
+                                <rect key="frame" x="53" y="275.5" width="269" height="261"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="BOY-vo-0jw"/>
+                                    <constraint firstAttribute="width" constant="269" id="YA4-QS-ZbU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Image" value="scratch_img"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="990">
+                                <rect key="frame" x="25" y="616" width="334" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yna-jw-4S3" firstAttribute="width" secondItem="790" secondAttribute="width" id="1hm-MJ-mIs"/>
+                            <constraint firstItem="790" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mfr-f5-Q2Q"/>
+                            <constraint firstItem="790" firstAttribute="centerX" secondItem="ef9-Jc-fys" secondAttribute="centerX" id="h90-Ri-kbz"/>
+                            <constraint firstItem="yna-jw-4S3" firstAttribute="height" secondItem="790" secondAttribute="height" id="hZB-87-vdd"/>
+                            <constraint firstItem="yna-jw-4S3" firstAttribute="centerY" secondItem="790" secondAttribute="centerY" id="ml0-ea-4uJ"/>
+                            <constraint firstItem="yna-jw-4S3" firstAttribute="centerX" secondItem="790" secondAttribute="centerX" id="u79-S0-vco"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ef9-Jc-fys"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblScratchPercentage" destination="990" id="name-outlet-990"/>
+                        <outlet property="scratchArea" destination="790" id="name-outlet-790"/>
+                        <outlet property="after_scratching" destination="yna-jw-4S3" id="name-outlet-yna-jw-4S3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
