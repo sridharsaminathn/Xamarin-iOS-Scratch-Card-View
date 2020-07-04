@@ -10,6 +10,8 @@ Google Pay scratch card Using Xamarin.iOS without library
 4. Set Image for scratch 
 5. Design background view in Storyboard
 
+![GitHub Logo](/images/Screenshot 2020-07-05 at 12.13.48 AM.png)
 
-![https://github.com/sridharsaminathn/Xamarin-iOS-Scratch-Card-View/blob/master/Images/Screenshot%202020-07-05%20at%2012.13.48%20AM.png]
+
+
 Run the project 
